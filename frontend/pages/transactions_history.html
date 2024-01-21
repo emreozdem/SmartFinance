@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Smart Finance App</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <div id="navbarContainer"></div>
+
+</head>
+<body>
+    <br>
+    <h2>Transfer History</h2>
+    <br>
+    <div id="totalTransferAmountsContainer"></div>
+    <div id="transactionsContainer"></div>
+    <div id="footerContainer"></div>
+    <script src="../js/transactions_history.js"></script>
+
+    <script>
+      $(document).ready(function () {
+          $("#navbarContainer").load("../assets/navbar.html");
+          $("#footerContainer").load("../assets/footer.html");
+      });
+  </script>
+
+
+</body>
+</html>

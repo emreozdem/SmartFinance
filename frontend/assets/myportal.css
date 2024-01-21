@@ -1,0 +1,20 @@
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.btn-custom {
+    width: 48%;
+}
+
+.btn-info-custom {
+    background-color: #5bc0de;
+    color: #fff;
+}
+
+.btn-danger-custom {
+    background-color: #d9534f;
+    color: #fff;
+}
+

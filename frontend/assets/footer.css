@@ -1,0 +1,126 @@
+body {
+    padding-bottom: 60px;
+    
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+    z-index: 100;
+    border: 1px solid #ddd;
+}
+
+.slogan {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+
+.contact-info {
+    position: relative;
+}
+
+.row {
+    position: relative;
+}
+
+.address {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+    text-align: left;
+    float: right;
+}
+
+.address h4 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+
+}
+
+.address p {
+    margin: 2px 0;
+    font-size: 15px;
+    float: right;
+    
+}
+
+.address :hover{
+    color: #ff4500;
+}
+
+.currencies{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+    text-align: left;
+    float: right;
+}
+
+
+.currencies h4{
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.currencies :hover{
+    color: #ff4500;
+}
+
+.contact-info {
+    font-size: 14px;
+}
+
+.contact-info :hover{
+    color: #ff4500;
+}
+
+.contact-info p {
+    margin: 2px 0;
+    font-size: 15px;
+}
+
+.contact-info h4 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+
+}
+
+.map-container {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin-left: auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    float: right;
+}
+
+@media all and (min-width: 34.375em) {
+    .map-container {
+        display: block;
+    }
+
+    .static-img {
+        display: none;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SmartFinance Login Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../assets/background.css"> 
+</head>
+
+<body class="img js-fullheight">
+    <canvas id="canvas" width="2000" height="1000"></canvas>
+    <div class="row">
+        <div class="col container-mt5 d-flex justify-content-center" style="height: 300px; width: 400px;">
+            <div class="card login-wrap p-0" style="height: 275px; width: 300px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                <form action="" class="signin-form" method="POST" id="loginForm" style="position: fixed; top: 60%; left: 50%; height: 225px; width: 225px; transform: translate(-50%, -50%); margin: 0; padding: 0;">
+                    <div class="form-group" style="margin-bottom: 10px;">
+                        <input name="userName" type="text" class="form-control" placeholder="username" required style="width: 100%; padding: 10px;">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 10px;">
+                        <input name="password" id="password-field" type="password" class="form-control" placeholder="password" required style="width: 100%; padding: 10px;">
+                        <span class="fa fa-fw fa-eye field-icon toggle-password" onclick="togglePassword('password-field')"></span>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="form-control btn btn-primary submit px-3" id="loginButton" style="width: 100%; padding: 10px;">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/background.js"></script>
+    <script src="../js/login.js"> </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function togglePassword(fieldId) {
+            var passwordField = document.getElementById(fieldId);
+            var fieldType = passwordField.getAttribute('type');
+            
+            if (fieldType === 'password') {
+                passwordField.setAttribute('type', 'text');
+            } else {
+                passwordField.setAttribute('type', 'password');
+            }
+        }
+    </script>
+</body>
+</html>

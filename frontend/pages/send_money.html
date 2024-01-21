@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../assets/send_money.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Transfer Page - SmartFinance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+    <script src="../js/send_money.js" defer></script>
+
+    <div id="navbarContainer"></div>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Send Money Page</h1>
+
+        <label for="senderIban" class="form-label">Sender Account IBAN:</label>
+        <select id="senderIban" class="form-select">
+        </select>
+
+        <label for="receiverIban" class="form-label">Receiver IBAN:</label>
+        <input type="text" id="receiverIban" class="form-control" placeholder="Enter Receiver IBAN">
+
+        <label for="amount" class="form-label">Amount to Send:</label>
+        <input type="text" id="amount" class="form-control" placeholder="Enter the Amount">
+
+        <br>
+
+        <a id="sendMoneyButton" href="#" class="btn btn-success">Send Money</a>
+
+
+    </div>
+
+    <br>
+
+    <div id="footerContainer"></div>
+    
+    <script>
+        $(document).ready(function() {
+          $("#navbarContainer").load("../assets/navbar.html");
+          $("#footerContainer").load("../assets/footer.html");
+        });
+    </script>
+</body>
+</html>
